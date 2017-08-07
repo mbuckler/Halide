@@ -31,8 +31,8 @@ option(USE_BOOST_NUMPY "Use Boost.Numpy dependency instead of Halide.Numpy" OFF)
 
 if(USE_BOOST_NUMPY)
 add_definitions( -DUSE_BOOST_NUMPY )
-set(BoostNumpy_INCLUDE_DIRS "")
-set(BoostNumpy_LIBRARY_DIR "")
+set(BoostNumpy_INCLUDE_DIRS "/opt/lib")
+set(BoostNumpy_LIBRARY_DIR "/opt/lib")
 set(BoostNumpy_LIBRARIES boost_numpy)
 else()
 #(NOT USE_BOOST_NUMPY) is true
